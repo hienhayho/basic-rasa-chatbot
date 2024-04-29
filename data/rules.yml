@@ -1,0 +1,33 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say hello anytime the user say hello
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Response to know when user surprise with bot's response
+  steps:
+  - intent: surprise
+  - action: utter_surprise
+
+- rule: Response when bot not know how to answer.
+  steps:
+  - intent: nlu_fallback
+  - action: utter_not_know
+
+- rule: Response when ask_health
+  steps:
+    - intent: ask_health
+    - action: utter_health_response
+
+- rule: Thank user when receiving praise
+  steps: 
+  - intent: praise
+  - action: utter_thank

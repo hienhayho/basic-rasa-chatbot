@@ -1,0 +1,63 @@
+version: "3.1"
+
+stories:
+
+- story: gap_xa_giao_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: goi_y_hoc_tap
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_health
+  - action: utter_health_response
+  - intent: praise
+  - action: utter_thank
+  - intent: ask_course
+  - action: action_what_to_learn
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: gap_xa_giao_2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_health
+  - action: utter_health_response
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: cau_chuyen_vui
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - intent: affirm
+  - action: utter_happy
+  - intent: praise
+  - action: utter_thank
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: dieu_ngac_nhien_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: surprise
+  - action: utter_surprise
+  - intent: affirm
+  - action: utter_happy
+
+- story: dieu_ngac_nhien_2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: surprise
+  - action: utter_surprise
+  - intent: deny
+  - action: utter_deny

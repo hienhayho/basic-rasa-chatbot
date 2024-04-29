@@ -1,0 +1,95 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - này bé
+    - chào
+    - chào nhá
+    - hellu
+    - hello cưng
+    - xin chào
+    - chao xìn
+    - hi
+    - hê lu
+
+- intent: surprise
+  examples: |
+    - ơ ơ
+    - ơ hay
+    - hả hả 
+    - what the hell
+    - sao lạ thế 
+    - đùa nhau à 
+    - hử
+
+- intent: goodbye
+  examples: |
+    - bye 
+    - bái bai
+    - cee you later
+    - gút bai
+    - bye
+    - goodbye
+    - gặp sau nhá
+    - hẹn gặp lại
+    - bye bye
+
+- intent: ask_health
+  examples: |
+    - khỏe không ?
+    - nay sao rồi
+    - dạo này ổn không ?
+    - sức khỏe sao rồi ?
+
+- intent: ask_course
+  examples: |
+    - học gì đây ta
+    - nay học về cái gì
+    - gợi ý cho tui cái học đi
+    - nay nên tìm hiểu cái gì
+
+- intent: affirm
+  examples: |
+    - đúng
+    - chuẩn
+    - chính xác
+    - tất nhiên
+    - nghe hay đó
+
+- intent: deny
+  examples: |
+    - no
+    - cấm nhá
+    - không được
+    - không thể nào
+    - không được
+
+- intent: praise
+  examples: |
+    - hay quá em ơi
+    - hay bé
+    - giỏi
+    - quá xuất sắc
+    - tốt lắm
+    - xứng đáng có 10 người yêu
+
+- intent: mood_great
+  examples: |
+    - hên dữ 
+    - may mắn quá đi
+    - vui quá xá là vui
+    - thế giới này thật vui
+    - một ngày thật đẹp
+
+- intent: mood_unhappy
+  examples: |
+    - quá tồi tệ
+    - tôi buồn quá
+    - chán vcl
+    - quá thất vọng
+    - trầm cảm
+    - quá mệt
+    - buồn :((
+    - không ổn tí nào
+    - bất ổn quá

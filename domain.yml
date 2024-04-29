@@ -1,0 +1,51 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - surprise
+  - affirm
+  - ask_health
+  - ask_course
+  - praise
+  - deny
+  - mood_great
+  - mood_unhappy
+
+responses:
+  utter_greet:
+  - text: "Hellu anh/chị, em có thể giúp gì được cho anh/chị nèo."
+
+  utter_health_response:
+  - text: "Quá khỏe luôn !"
+  - text: "Không ổn tí nào :(("
+
+  utter_cheer_up:
+  - text: "Đừng buồn vì những điều nhỏ nhoi anh/chị ui :((."
+
+  utter_thank:
+  - text: "Anh/chị quá khen ạ, hihi."
+  - text: "Anh/chị cứ nói quá à. he he :))"
+
+  utter_surprise:
+  - text: "Dạ em có làm sai chỗ nào không ạ :(("
+
+  utter_not_know: 
+  - text: "Cái này nằm ngoài khả năng của em ạ :(("
+  - text: "Em hông hiểu lắm, anh/chị có thể diễn đạt theo ý khác được hông ạ."
+
+  utter_deny: 
+  - text: "Dạ em sẽ chú ý lần sau ạ."
+
+  utter_happy:
+  - text: "Tốt quá anh/chị ơi !"
+
+  utter_goodbye:
+  - text: "Bái bai anh/chị ạ."
+
+actions:
+  - action_what_to_learn
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
